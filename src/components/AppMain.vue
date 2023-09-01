@@ -1,16 +1,32 @@
 <script>
+import axios from 'axios';
+
 export default {
     name: 'AppMain',
     data(){
         return{
-
+            baseUrl: 'http://localhost:8000',
+            vaccines: [],
+            loading: true
         }
     },
     created(){
-
+        this.getVaccines();
     },
     methods:{
+        getVaccines(){
+            this.loading = true
+            axios.get(`${this.baseUrl}/api/vaccines`).then((response) => {
+                console.log(response);
+                if(response.data.success){
+                    this.vaccines = response.data.results;
+                    this.loading = false;
+                }
+                else{
 
+                }
+            })
+        }
     }
    
 }
