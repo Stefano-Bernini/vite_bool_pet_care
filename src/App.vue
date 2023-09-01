@@ -1,10 +1,13 @@
 <script>
+import AppJumbotron from './components/AppJumbotron.vue';
 import AppMain from './components/AppMain.vue';
 import AppHeader from "./components/AppHeader.vue";
 
 
 export default{
   components: {
+    AppHeader,
+    AppJumbotron,
     AppMain
   }
 }
@@ -13,6 +16,7 @@ export default{
 <template>
   <div>
     <AppHeader />
+    <AppJumbotron />
     <AppMain />
   </div>
 </template>
