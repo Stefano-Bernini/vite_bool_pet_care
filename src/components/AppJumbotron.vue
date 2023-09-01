@@ -98,8 +98,8 @@ export default {
             </div> 
         </div>
         <div class="thumbs">
-            <div class="text-center prev" @click="prevSlide"><i class="fa-solid fa-circle-arrow-up fa-xl" style="color: #400080;"></i></div>
-            <div class="text-center next" @click="nextSlide"><i class="fa-solid fa-circle-arrow-down fa-xl" style="color: #400080;"></i></div>
+            <div class="text-center prev" @click="prevSlide"><i class="fa-solid fa-circle-arrow-up fa-xl" style="color: #0dcaf0;"></i></div> 
+            <div class="text-center next" @click="nextSlide"><i class="fa-solid fa-circle-arrow-down fa-xl" style="color: #0dcaf0;"></i></div>
             <div class="thumb" v-for="(slide, index) in slider" v-bind:class="activeSlide === index ? 'active' : ''" @click="clickedActiveSlide(index)">
                 <img v-bind:src="slide.image" alt="image" />
             </div>
