@@ -52,10 +52,3 @@ export default {
 <style lang="">
     
 </style>
-
-
-Contatti
-
-06 39735101
-
-ambvetsantoritosto@yahoo.it

@@ -13,28 +13,28 @@ export default {
             slider: [ 
                 {
                     image: 'https://www.batupetshop.it/wp-content/uploads/2019/02/slide1-1.jpg',
-                    title: 'Cani',
-                    text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                    title: 'Cani e Gatti',
+                    text: 'I cani e i gatti sono animali domestici molto amati. Sono fedeli, affettuosi e divertenti. Ognuno ha il suo carattere unico e speciale. ',
                 }, 
                 {
-                    image: 'https://www.proecontro.com/wp-content/uploads/2019/12/animali-domestici.jpg',
-                    title: 'Gatti',
-                    text: 'Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.',
-                }, 
-                {
-                    image: 'https://images.hdqwalls.com/download/super-cute-animals-1336x768.jpg',
+                    image: 'https://t1.ea.ltmcdn.com/it/posts/1/5/0/canarino_3051_4_600.jpg',
                     title: 'Uccelli',
-                    text: "Grab all of your friends and drop into Epic Games Fortnite, a massive 100 - player face - off that combines looting, crafting, shootouts and chaos.",
+                    text: ' Gli uccelli sono creature meravigliose. Sono colorati, eleganti e melodiosi. Ognuno ha il suo canto unico e il suo modo di volare.',
+                }, 
+                {
+                    image: 'https://www.settemuse.it/sfondi_animali/mammiferi/conigli_lepri/foto_conigli_005.jpg',
+                    title: 'Roditori',
+                    text: " I roditori sono animali piccoli e veloci. Sono intelligenti, curiosi e adorabili. Ognuno ha il suo modo unico di mangiare e di nascondersi.",
                 }, 
                 {
                     image: 'https://images5.fanpop.com/image/photos/31400000/Animals-Wallpaper-animals-31476753-1366-768.jpg',
                     title: 'Cavalli',
-                    text: 'Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city',
+                    text: 'I cavalli sono animali nobili e maestosi. Sono forti, veloci e leali. Ognuno ha il suo modo unico di galoppare e di comunicare.',
                 }, 
                 {
-                    image: 'https://images.hdqwalls.com/download/super-cute-animals-1336x768.jpg',
-                    title: "Roditori",
-                    text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
+                    image: 'https://magazine.arcaplanet.it/wp-content/uploads/2023/05/tartarughe-cosa-mangiano.jpg',
+                    title: "Rettili",
+                    text: 'I rettili sono animali affascinanti. Sono silenziosi, misteriosi e sorprendenti. Ognuno ha il suo modo unico di muoversi e di cacciare',
                 }
             ],
         }      
@@ -75,7 +75,7 @@ export default {
         autoplaySlider(){
             this.autoplaySlide = setInterval(() => {
                 this.nextSlide();
-            }, 3000);
+            }, 5000);
         }
         
     }
@@ -92,8 +92,8 @@ export default {
             <div class="item">
                 <img v-bind:src="slider[activeSlide].image" v-bind:alt="slider[activeSlide].title" />
                 <div class="text">
-                    <h3 class="text-black">{{ slider[activeSlide].title }}</h3>
-                    <p class="text-black">{{ slider[activeSlide].text }}</p>
+                    <h3 class="text-black text_shadow">{{ slider[activeSlide].title }}</h3>
+                    <p class="text-black text_shadow2">{{ slider[activeSlide].text }}</p>
                 </div>
             </div> 
         </div>
