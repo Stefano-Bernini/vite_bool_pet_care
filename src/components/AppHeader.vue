@@ -14,7 +14,7 @@ export default {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active white-space animation" aria-current="page" href="#"><h4>Chi siamo</h4></a>
+                        <router-link class="nav-link active white-space animation" aria-current="page" :to="{name: 'about-us'}"><h4>Chi siamo</h4></router-link>
                     </li>
                 </ul>
             </div>
