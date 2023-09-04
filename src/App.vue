@@ -21,6 +21,7 @@ export default{
     <AppJumbotron />
     <AppMain />
     <AppFooter />
+    <router-view></router-view>
   </div>
 </template>
 

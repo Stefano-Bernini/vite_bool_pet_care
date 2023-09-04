@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg mb-4">
+    <nav class="navbar navbar-expand-lg mb-4 sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand me-auto" href="#"><img src="../assets/site_logo.png" alt="" width="80px"></a>
             <div class="d-flex justify-content-center w-100">
@@ -14,7 +14,7 @@ export default {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active white-space" aria-current="page" href="#">Chi siamo</a>
+                        <a class="nav-link active white-space animation" aria-current="page" href="#"><h4>Chi siamo</h4></a>
                     </li>
                 </ul>
             </div>
@@ -29,5 +29,18 @@ export default {
 
     .white-space{
         white-space: nowrap;
+    }
+
+    .animation{
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #54b3d6;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out; 
+    }
+
+    .animation:hover{
+        box-shadow: inset 150px 0 0 0 #e2e2e2;
+        color: white;
     }
 </style>
