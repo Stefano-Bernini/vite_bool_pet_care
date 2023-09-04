@@ -35,10 +35,10 @@ export default {
     <section>
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-6 text-center">
+                <div class="col-6 text-end">
                     <img src="../assets/servizi.jpg" alt="veterinari" width="450px">
                 </div>
-                <div class="col-6 text-start">
+                <div class="col-6 text-center">
                     <h3>I Nostri Servizi e Missione</h3>
                     <p>La nostra missione è assicurare che i vostri animali vivano una vita sana e felice. Siamo anche qui per supportarvi come proprietari, rispondendo alle vostre domande e fornendo preziosi consigli sulla cura e l'alimentazione. Grazie per aver scelto BoolPetCare come vostro partner nella cura dei vostri amati animali. Siamo ansiosi di conoscerli e di lavorare insieme per garantire loro una vita lunga e prospera.</p>
                 </div>
