@@ -8,9 +8,9 @@ export default {
     <nav class="navbar navbar-expand-lg mb-4 sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand me-auto" href="#"><img src="../assets/site_logo.png" alt="" width="80px"></a>
-            <div class="d-flex justify-content-center w-100">
+            <router-link :to="{name:'home'}" class="d-flex justify-content-center w-100 nav-link">
                 <i class="fa-solid fa-paw fa-2xl"> BoolPetCare</i>
-            </div>
+            </router-link>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
